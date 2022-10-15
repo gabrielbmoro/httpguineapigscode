@@ -1,24 +1,93 @@
+h1 {
+    background: #ffffff;
+    padding: 18px;
+    border-color: black;
+    text-align: center;
+    border-style: groove;
+}
+
+#title {
+    padding: 16px;
+    border-color: black;
+    width: 90%;
+    border-radius: 20px;
+    border-style: groove;
+    background: rgba(112, 175, 136, 0.5);
+    margin: 15px;
+}
+
+#base-quote {
+    text-align: end;
+}
+
 body {
-  font-family: sans-serif;
-  margin: auto;
-  max-width: 1280px;
+    font-family: sans-serif;
+    margin: auto;
+    padding: 16px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-flow: inherit;
 }
 
 .navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+    background-color: #313236;
+    border-radius: 2px;
+    max-width: 800px;
 }
 
 .navbar a {
-  color: #aaa;
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
-  text-decoration: none;
+    color: #aaa;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
 }
 
 .navbar a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
+.http-status-div {
+    padding: 1%;
+    margin: 2%;
+    height: fit-content;
+    width: 30%;
+    border-style: dashed;
+    border-color: cadetblue;
+    border-width: thick;
+}
+
+.http-code {
+    float: bottom;
+    text-align: center;
+    font-size: 18px;
+}
+
+.http-description {
+    float: bottom;
+    text-align: center;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+#footer {
+    text-align: center;
+    float: bottom;
+    font-style: italic;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.http-image-source {
+    text-align: end;
+    font-size: 12px;
+}
