@@ -1,15 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     background: #ffffff;
-    padding: 18px;
+    padding: 2.5%;
     border-color: black;
     text-align: center;
     border-style: groove;
 }
 
 #title {
-    padding: 16px;
+    padding: 2.5%;
     border-color: black;
-    width: 90%;
     border-radius: 20px;
     border-style: groove;
     background: rgba(112, 175, 136, 0.5);
@@ -26,13 +29,15 @@ body {
     padding: 16px;
 }
 
-.content {
-    padding: 20px;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.section {
-    display: flex;
-    flex-flow: inherit;
+[class*="col-"] {
+    float: left;
+    padding: 15px;
 }
 
 .navbar {
@@ -51,16 +56,6 @@ body {
 
 .navbar a:hover {
     color: #ffffff;
-}
-
-.http-status-div {
-    padding: 1%;
-    margin: 2%;
-    height: fit-content;
-    width: 30%;
-    border-style: dashed;
-    border-color: cadetblue;
-    border-width: thick;
 }
 
 .http-code {
@@ -90,4 +85,20 @@ img {
 .http-image-source {
     text-align: end;
     font-size: 12px;
+}
+
+[class*="col-"] {
+    width: 45%;
+    padding: 1.25%;
+    margin: 1.25%;
+    border-style: dashed;
+    border-color: cadetblue;
+    border-width: thick;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
 }
